@@ -5,27 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- TODO 1: 브라우저 탭에 보일 제목 -->
   <title>내 과제 아카이브</title>
+  <!-- CSS 스타일시트 연결 -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- TODO 2: 이름 -->
-  <h1>문채원의 과제 아카이브</h1>
+  <div class="container">
+    <!-- 헤더 영역: 대형 제목 및 한 줄 소개 -->
+    <header class="archive-header">
+      <!-- TODO 2: 이름 -->
+      <h1 class="main-title">문채원의 과제 아카이브</h1>
 
-  <!-- TODO 3: 한 줄 소개 -->
-  <p>2026-2 정보문화기술입문 p5.js 과제 모음</p>
+      <!-- TODO 3: 한 줄 소개 -->
+      <p class="sub-title">2026-2 정보문화기술입문 p5.js 과제 모음</p>
+    </header>
 
-  <!-- 과제 목록: href 는 과제 폴더 이름과 똑같이 (대소문자까지) -->
-  <ul>
-    <!-- TODO 4: 과제 1 제목 -->
-    <li><a href="assignment1/">Assignment 1 - 커피 한 잔의 여유</a></li>
+    <!-- 본문 영역: 과제 목록 -->
+    <main class="archive-content">
+      <section class="assignment-section">
+        <!-- 과제 목록: href 는 과제 폴더 이름과 똑같이 (대소문자까지) -->
+        <ul class="assignment-list">
+          <!-- TODO 4: 과제 1 제목 -->
+          <li class="assignment-item"><a href="assignment1/">Assignment 1 - 커피 한 잔의 여유</a></li>
 
-    <!-- TODO 5: 과제 2 제목 -->
-    <li><a href="assignment2/">Assignment 2 - 추석 송편 쟁반 생성기</a></li>
+          <!-- TODO 5: 과제 2 제목 -->
+          <li class="assignment-item"><a href="assignment2/">Assignment 2 - 추석 송편 쟁반 생성기</a></li>
 
-    <!-- (선택) 과제 3을 추가할 때: 아래 줄의 주석을 풀고, assignment3 폴더를 넣는다
-    <li><a href="assignment3/">Assignment 3 - Button</a></li>
-    -->
-  </ul>
+          <!-- (선택) 과제 3을 추가할 때: 아래 줄의 주석을 풀고, assignment3 폴더를 넣는다
+          <li class="assignment-item"><a href="assignment3/">Assignment 3 - Button</a></li>
+          -->
+        </ul>
+      </section>
+    </main>
+  </div>
 
 </body>
 </html>
